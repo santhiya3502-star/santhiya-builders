@@ -12,45 +12,22 @@ body {
     background-color: #f2f2f2;
 }
 
-/* HERO SECTION WITH BACKGROUND IMAGE */
-.hero {
-    background-image: url('building.jpg');
-    background-size: cover;
-    background-position: center;
-    height: 70vh;
-    position: relative;
-    color: white;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: rgba(0,0,0,0.55);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
+header {
+    background: #f6c1a5;
     text-align: center;
-    padding-top: 80px;
+    padding: 20px;
 }
 
-.hero h1 {
-    font-size: 34px;
-    margin-bottom: 10px;
-    color: #ffd9c2;
+header h1 {
+    color: #b30000;
+    margin: 0;
 }
 
-.hero p {
-    font-size: 16px;
+header p {
+    color: #003366;
     font-weight: bold;
 }
 
-/* SECTIONS */
 section {
     background: #ffffff;
     margin: 15px;
@@ -72,7 +49,14 @@ ul {
     line-height: 1.8;
 }
 
-/* BUTTONS */
+footer {
+    background: #1e3d59;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 14px;
+}
+
 .button {
     display: inline-block;
     background: green;
@@ -82,35 +66,23 @@ ul {
     border-radius: 5px;
     margin-top: 10px;
 }
-
-/* FOOTER */
-footer {
-    background: #1e3d59;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    font-size: 14px;
-}
 </style>
 </head>
 
 <body>
 
-<!-- HERO -->
-<div class="hero">
-    <div class="hero-content">
-        <h1>Santhiya Builders</h1>
-        <p>One-Stop-Solution for Your Complete Construction Needs</p>
-        <a class="button" href="tel:9384552009">Call Now</a>
-    </div>
-</div>
+<header>
+    <h1>Santhiya Builders</h1>
+    <p>One-Stop-Solution for Your Complete Construction Needs</p>
+</header>
 
 <section>
     <h2>About Us</h2>
     <p>
         Santhiya Builders is a trusted construction company in Trichy,
-        offering high-quality residential and commercial construction
-        services with strong foundations and modern designs.
+        offering complete solutions for residential and commercial
+        construction. We focus on quality work, strong foundations,
+        modern designs, and customer satisfaction.
     </p>
 </section>
 
@@ -127,8 +99,8 @@ footer {
 <section>
     <h2>Projects</h2>
     <p>
-        Independent houses, apartments, and commercial buildings
-        completed with quality workmanship.
+        We handle independent houses, apartments, and commercial
+        buildings. Project photos can be added here.
     </p>
 </section>
 
@@ -150,6 +122,8 @@ footer {
         santhiyabuilders9000@gmail.com
     </p>
 
+    <a class="button" href="tel:9384552009">Call Now</a>
+    <br><br>
     <a class="button" href="https://wa.me/919384552009">WhatsApp Chat</a>
 </section>
 
